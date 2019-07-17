@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,7 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor = #colorLiteral(red: 0.9960784314, green: 0.9960784314, blue: 0.9960784314, alpha: 1)
         
         // Let's check if user availability
-        if !SESSION.IsAppLaunchFirstTime() {
+//        if Auth.auth().currentUser != nil {
+//            print("home")
+////            self.performSegue(withIdentifier: "alreadyLoggedIn", sender: nil)
+//        }
+        if SESSION.IsAppLaunchFirstTime() {
             // Show home page
             let mainViewController = ARViewController.instantiate(from: .Main)
             let navVC = UINavigationController.init(rootViewController: mainViewController)
@@ -31,11 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Show login page
             let loginViewController = LoginViewController.instantiate(from: .Main)
             SESSION.setAppLaunchIsFirstTime(isLogin: false)
-            let navVC = UINavigationController.init(rootViewController: loginViewController)
-            self.window?.rootViewController = navVC
+            self.window?.rootViewController = loginViewController
         }
         
         self.window?.makeKeyAndVisible()
+        FirebaseApp.configure()
         return true
     }
 

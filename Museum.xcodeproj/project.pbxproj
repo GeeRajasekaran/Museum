@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EEDA9DF0854102D5B8EA41F /* Pods_Museum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98D4B5FB1118279D91BCFF6 /* Pods_Museum.framework */; };
 		943D8EDA22DDA3E000AEA7C4 /* SharedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D8ED822DDA3E000AEA7C4 /* SharedObjects.swift */; };
 		943D8EDB22DDA3E000AEA7C4 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D8ED922DDA3E000AEA7C4 /* Session.swift */; };
 		943D8EDE22DDA85800AEA7C4 /* MuseumInfoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D8EDD22DDA85800AEA7C4 /* MuseumInfoListViewController.swift */; };
@@ -26,6 +27,7 @@
 		9482451422DD9407004FAFA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9482451222DD9407004FAFA4 /* LaunchScreen.storyboard */; };
 		9482451D22DD97A7004FAFA4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9482451C22DD97A7004FAFA4 /* LoginViewController.swift */; };
 		9482452D22DD9B75004FAFA4 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9482452C22DD9B75004FAFA4 /* AppStoryboard.swift */; };
+		94EC50F222DF442C005138F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94EC50F122DF442C005138F4 /* GoogleService-Info.plist */; };
 		D8D41BDC22DEF62D00E4569D /* BillboardInterfaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D41BCB22DEF62B00E4569D /* BillboardInterfaceNode.swift */; };
 		D8D41BDD22DEF62D00E4569D /* BillboardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D41BCC22DEF62B00E4569D /* BillboardNode.swift */; };
 		D8D41BDE22DEF62D00E4569D /* BeaconFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D41BCD22DEF62B00E4569D /* BeaconFocus.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D4A246F957CCF89665FF4AC /* Pods-Museum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Museum.release.xcconfig"; path = "Target Support Files/Pods-Museum/Pods-Museum.release.xcconfig"; sourceTree = "<group>"; };
+		7DF25EE72163476F5CFDE6FA /* Pods-Museum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Museum.debug.xcconfig"; path = "Target Support Files/Pods-Museum/Pods-Museum.debug.xcconfig"; sourceTree = "<group>"; };
 		943D8ED822DDA3E000AEA7C4 /* SharedObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedObjects.swift; sourceTree = "<group>"; };
 		943D8ED922DDA3E000AEA7C4 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		943D8EDD22DDA85800AEA7C4 /* MuseumInfoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumInfoListViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 		9482451522DD9407004FAFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9482451C22DD97A7004FAFA4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9482452C22DD9B75004FAFA4 /* AppStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
+		94EC50F122DF442C005138F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D8D41BCB22DEF62B00E4569D /* BillboardInterfaceNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillboardInterfaceNode.swift; sourceTree = "<group>"; };
 		D8D41BCC22DEF62B00E4569D /* BillboardNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillboardNode.swift; sourceTree = "<group>"; };
 		D8D41BCD22DEF62B00E4569D /* BeaconFocus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconFocus.swift; sourceTree = "<group>"; };
@@ -86,6 +91,7 @@
 		D8D41BDA22DEF62D00E4569D /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
 		D8D41BDB22DEF62D00E4569D /* BillboardableNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillboardableNode.swift; sourceTree = "<group>"; };
 		D8D41BED22DEF6B700E4569D /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		D98D4B5FB1118279D91BCFF6 /* Pods_Museum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Museum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,12 +99,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EEDA9DF0854102D5B8EA41F /* Pods_Museum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48DC15916B6F7749A458CE27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D98D4B5FB1118279D91BCFF6 /* Pods_Museum.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C7AD456A1CFDFD03504F2B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DF25EE72163476F5CFDE6FA /* Pods-Museum.debug.xcconfig */,
+				7D4A246F957CCF89665FF4AC /* Pods-Museum.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		943D8EDC22DDA7F900AEA7C4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +167,8 @@
 			children = (
 				9482450622DD9406004FAFA4 /* Museum */,
 				9482450522DD9406004FAFA4 /* Products */,
+				4C7AD456A1CFDFD03504F2B2 /* Pods */,
+				48DC15916B6F7749A458CE27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +183,7 @@
 		9482450622DD9406004FAFA4 /* Museum */ = {
 			isa = PBXGroup;
 			children = (
+				94EC50F122DF442C005138F4 /* GoogleService-Info.plist */,
 				D8D41BF022DEF79D00E4569D /* AppDelegate */,
 				D8D41BCA22DEF5FA00E4569D /* ARSource */,
 				D8D41BF122DEF7B100E4569D /* Assets */,
@@ -239,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9482451822DD9407004FAFA4 /* Build configuration list for PBXNativeTarget "Museum" */;
 			buildPhases = (
+				FA499BDF2CD5E674860BABE4 /* [CP] Check Pods Manifest.lock */,
 				9482450022DD9406004FAFA4 /* Sources */,
 				9482450122DD9406004FAFA4 /* Frameworks */,
 				9482450222DD9406004FAFA4 /* Resources */,
+				99940AC9CFDA2A4B6B79530C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,10 +325,62 @@
 				943D8EE722DDA8F600AEA7C4 /* MeseumInfoTableViewCell.xib in Resources */,
 				9482451122DD9407004FAFA4 /* Assets.xcassets in Resources */,
 				9482450F22DD9406004FAFA4 /* Main.storyboard in Resources */,
+				94EC50F222DF442C005138F4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99940AC9CFDA2A4B6B79530C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Museum/Pods-Museum-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Museum/Pods-Museum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA499BDF2CD5E674860BABE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Museum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9482450022DD9406004FAFA4 /* Sources */ = {
@@ -480,19 +561,20 @@
 		};
 		9482451922DD9407004FAFA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF25EE72163476F5CFDE6FA /* Pods-Museum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F474TDMG59;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = DWAUF4BFYQ;
 				INFOPLIST_FILE = Museum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AgilizTech.museum;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AgilizTech.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = Agilizdemodev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -500,17 +582,18 @@
 		};
 		9482451A22DD9407004FAFA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D4A246F957CCF89665FF4AC /* Pods-Museum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F474TDMG59;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Museum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AgilizTech.museum;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AgilizTech.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

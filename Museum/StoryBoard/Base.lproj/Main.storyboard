@@ -138,7 +138,7 @@
                                     <color key="titleColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="skipBtnTapped:" destination="RoJ-vk-vvI" eventType="touchUpInside" id="OMZ-qS-FA0"/>
+                                    <action selector="signUpAction:" destination="RoJ-vk-vvI" eventType="touchUpInside" id="cyK-2y-8HP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -159,6 +159,10 @@
                         <viewLayoutGuide key="safeArea" id="DII-P2-xtF"/>
                     </view>
                     <navigationItem key="navigationItem" id="HAl-uc-ZFH"/>
+                    <connections>
+                        <outlet property="email" destination="48K-WF-7E0" id="Qvc-ej-6zn"/>
+                        <outlet property="password" destination="09p-iC-rpS" id="s9D-Mo-Eza"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oqa-A4-old" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
