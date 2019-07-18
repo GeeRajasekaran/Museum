@@ -8,5 +8,5 @@ target 'Museum' do
   # Pods for Museum
 	pod 'Firebase/Core'
   pod 'Firebase/Auth'
-
+ pod 'TransitionButton'
 end

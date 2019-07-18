@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            print("home")
 ////            self.performSegue(withIdentifier: "alreadyLoggedIn", sender: nil)
 //        }
-        if SESSION.IsAppLaunchFirstTime() {
+        if !SESSION.IsAppLaunchFirstTime() {
             // Show home page
             let mainViewController = ARViewController.instantiate(from: .Main)
             let navVC = UINavigationController.init(rootViewController: mainViewController)
