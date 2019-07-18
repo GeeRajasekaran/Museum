@@ -18,7 +18,7 @@ class parentVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self .initialSetup()
+//        self .initialSetup()
     }
     
     override func viewWillAppear(_ animated: Bool) {

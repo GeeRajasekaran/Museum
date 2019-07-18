@@ -64,42 +64,42 @@ extension ARViewController: ARArtViewDelegate {
     func artworkForDetectedImage(artView: ARArtView, image: ARReferenceImage) -> Artwork? {
         
         print("New image \(image.name)")
-//        beacons.removeAll()
+        beacons.removeAll()
         
-//        if image.name == "warriorMuesum"{
-//
-//
-//            let beacon1 = Beacon(
-//                contentTitle: "warrior suite",
-//                contentSummary: "Tamil warrior suite.",
-//                position: SCNVector3(-0.30, -0.30, 0))
-//            beacons.append(beacon1)
-//
-//            let beacon2 = Beacon(
-//                contentTitle: "warrior Helemet",
-//                contentSummary: "Helemt which is used in war",
-//                position: SCNVector3(0.25, 0.5, 0))
-//            beacons.append(beacon2)
-//
-//            let beacon3 = Beacon(
-//                contentTitle: "warrior sword",
-//                contentSummary: "sword which is used in war in 1719",
-//                position: SCNVector3(0.60, -0.45, 0))
-//            beacons.append(beacon3)
-//
-//
-//            let artwork = Artwork(
-//                width: 3,
-//                height: 2,
-//                beacons: beacons,
-//                title: "Equipments of tamil warrior from 1759",
-//                dateString: "28 June 1759",
-//                author: "surya",
-//                image: nil)
-//
-//            return artwork
-//        }
-        if image.name == "chevroletengine"{
+        if image.name == "sattilite"{
+
+
+            let beacon1 = Beacon(
+                contentTitle: "warrior suite",
+                contentSummary: "Tamil warrior suite.",
+                position: SCNVector3(-0.30, -0.30, 0))
+            beacons.append(beacon1)
+
+            let beacon2 = Beacon(
+                contentTitle: "warrior Helemet",
+                contentSummary: "Helemt which is used in war",
+                position: SCNVector3(0.25, 0.5, 0))
+            beacons.append(beacon2)
+
+            let beacon3 = Beacon(
+                contentTitle: "warrior sword",
+                contentSummary: "sword which is used in war in 1719",
+                position: SCNVector3(0.60, -0.45, 0))
+            beacons.append(beacon3)
+
+
+            let artwork = Artwork(
+                width: 3,
+                height: 2,
+                beacons: beacons,
+                title: "Equipments of tamil warrior from 1759",
+                dateString: "28 June 1759",
+                author: "surya",
+                image: nil)
+
+            return artwork
+        }
+       else if image.name == "rakeshAstro"{
 
             let beacon1 = Beacon(
                 contentTitle: "About Sir M. Visvesvaraya",

@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "dinnosarbig.jpg"
+      "filename" : "s1.jpg"
     }
   ],
   "info" : {
@@ -10,7 +10,6 @@
     "author" : "xcode"
   },
   "properties" : {
-    "width" : 4,
-    "unit" : "inches"
+    "width" : 3.5555555555555554
   }
 }
