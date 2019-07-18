@@ -490,7 +490,7 @@ extension ARArtView: ARSCNViewDelegate {
 	}
 	
 	func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
-//        print("In Did update delegate")
+        print("In Did update delegate")
 		node.eulerAngles.x -= Float(90).degreesToRadians
 		guard let pov = sceneView.pointOfView else {
 			return
