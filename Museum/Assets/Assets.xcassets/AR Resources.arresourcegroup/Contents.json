@@ -5,10 +5,40 @@
   },
   "resources" : [
     {
+      "filename" : "basicmachinecontainer.arreferenceimage"
+    },
+    {
+      "filename" : "batteries.arreferenceimage"
+    },
+    {
+      "filename" : "chevroletengine.arreferenceimage"
+    },
+    {
+      "filename" : "evt.arreferenceimage"
+    },
+    {
+      "filename" : "fuelCell.arreferenceimage"
+    },
+    {
+      "filename" : "humanmusclepower.arreferenceimage"
+    },
+    {
+      "filename" : "mechanisms.arreferenceimage"
+    },
+    {
       "filename" : "rakeshAstro.arreferenceimage"
     },
     {
+      "filename" : "rockets.arreferenceimage"
+    },
+    {
       "filename" : "sattilite.arreferenceimage"
+    },
+    {
+      "filename" : "storyofspace.arreferenceimage"
+    },
+    {
+      "filename" : "thermalPower.arreferenceimage"
     },
     {
       "filename" : "warriorMuesum.arreferenceimage"
