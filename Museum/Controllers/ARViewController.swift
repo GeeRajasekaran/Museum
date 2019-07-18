@@ -13,7 +13,7 @@ class ARViewController: parentVC {
     
     let artView = ARArtView()
     var beacons = [Beacon]()
-    
+    var currentImagaName:String?
     
     //MAR: - View Life cycles
     override func viewDidLoad() {
@@ -65,10 +65,19 @@ extension ARViewController: ARArtViewDelegate {
         
         print("New image \(image.name)")
         beacons.removeAll()
+        print(self.currentImagaName ?? "image name is nil")
+        if let imageName = self.currentImagaName{
+            if imageName != image.name!{
+                self.currentImagaName = nil
+                self.configureARRefrenceImages()
+            }
+        }else{
+            self.currentImagaName = image.name!
+        }
         
         if image.name == "sattilite"{
 
-
+           
             let beacon1 = Beacon(
                 contentTitle: "warrior suite",
                 contentSummary: "Tamil warrior suite.",
