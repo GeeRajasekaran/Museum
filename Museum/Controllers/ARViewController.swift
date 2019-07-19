@@ -94,9 +94,9 @@ extension ARViewController: ARArtViewDelegate {
             beacons.append(beacon2)
             
             let beacon3 = Beacon(
-                contentTitle: "warrior sword",
-                contentSummary: "sword which is used in war in 1719",
-                position: SCNVector3(0.60, -0.45, 0))
+                contentTitle: ARStrings.becon3ContentTitleForBaskaraSat.localized,
+                contentSummary: ARStrings.becon3ContentDescForBaskaraSat.localized,
+                position: SCNVector3(0.90, -0.30, 0))
             beacons.append(beacon3)
             
             
@@ -104,9 +104,9 @@ extension ARViewController: ARArtViewDelegate {
                 width: 3,
                 height: 2,
                 beacons: beacons,
-                title: "Equipments of tamil warrior from 1759",
-                dateString: "28 June 1759",
-                author: "surya",
+                title: ARStrings.artWorkSat.localized,
+                dateString: "From 15 August 1969",
+                author: ARStrings.artWorkSatAuthor.localized,
                 image: nil)
             
             return artwork
@@ -114,7 +114,7 @@ extension ARViewController: ARArtViewDelegate {
         case "rakeshAstro":
             let beacon1 = Beacon(
                 contentTitle: ARStrings.beconContentTitleForRakeshAstro.localized,
-                contentSummary: "Eminent engineer and statesman, Sir M. Visvesvaraya was born on September 15, 1860 in Muddenahalli village in Karnataka’s Kolar district. He lost his father, who was a Sanskrit scholar at the age of 15. After completing his early education in Chikkaballapur, he moved to Bangalore for his higher education. /n He joined the Science College in Poona to study Engineering and was ranked first in the L.C.E. and the F.C.E. Examinations in 1883. The Government of Bombay promptly offered him the job of an Assistant Engineer at Nasik. During his stint as an engineer, he successfully implemented many projects. He was the brain behind the Krishnaraja Sagar dam in Mysore./n Known for his simplicity, he was appointed as the Dewan by the Maharaja of Mysore in 1912. During his tenure as the Dewan of Mysore, he worked relentlessly for the overall development of the state. Many new industries came up during his tenure as the Dewan. These include the Sandal Oil Factory, the Soap Factory, the Metals Factory, the Chrome Tanning Factory and the Bhadravati Iron and Steel Works.\n Honored with the Bharat Ratna in 1955, Sir Mokushagundam Visvesvaraya was a pre-eminent engineer, scholar and statesman of India. In order to honor the achievements of the most influential engineer from the history of contemporary India, Engineer’s Day is celebrated on Sir Visvesvaraya’s birthday, 15 September. Throughout his career of about 30 years as an engineer, 20 years as administrator, and 20 years as advisor and statesman, Sir Visvesvaraya contributed significantly in nation-building and his engineering works were spread across the country. Sir Visvesvaraya had a flair for complex engineering and nation building. The Engineering Community across India celebrate 15th September as Engineers Day as a tribute to the greatest Indian Engineer, Sir M Visvesvaraya.",
+                contentSummary: "In 1970, after joining the Indian Air Force as a test pilot, his passion for flying opened up several opportunities such as being a part of war operations against Pakistan. He flew various Mikoyan-Gurevich aircrafts starting from 1971. Rakesh swiftly progressed through many levels and in 1984 he was appointed as the Squadron Leader and pilot of the Indian Air Force. He was a squadron leader with the Indian Air Force, when he flew into space in 1984 as part of a joint programme between the Indian Space Research Organisation (ISRO) and the Soviet Intercosmos space program.Sharma, then a Squadron Leader and pilot with the Indian Air Force embarked on a historic mission in 1984 as part of a joint space program between the Indian Space Research Organisation and the Soviet Intercosmos space program, and spent eight days in space aboard the Salyut 7 space station.",
                 position: SCNVector3(0.25, 0.5, 0))
             beacons.append(beacon1)
             

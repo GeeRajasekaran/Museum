@@ -13,8 +13,10 @@ import UIKit
 enum ARStrings: String {
    
     case beconContentTitleForRakeshAstro = "beconContentTitleForRakeshAstro"
-    
-    
+    case becon3ContentTitleForBaskaraSat = "becon3ContentTitleForBaskaraSat"
+    case becon3ContentDescForBaskaraSat = "becon3ContentDescForBaskaraSat"
+    case artWorkSat =  "artWorkSat"
+    case artWorkSatAuthor = "artWorkSatAuthor"
     var localized: String {
         return self.rawValue.localized(tableName: "AR")
     }
