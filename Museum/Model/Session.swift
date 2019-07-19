@@ -61,4 +61,33 @@ class Session: NSObject {
         UserDefaults.standard.synchronize()
     }
     
+    func setUserPreferredLanguage(aStrUserLang : String) {
+        
+        UserDefaults.standard.set(aStrUserLang, forKey: "user_Lang")
+        Bundle.setLanguage(aStrUserLang)
+        userdefaultsSynchronize()
+    }
+    
+    func getUserPreferredLanguage() -> String {
+        
+        if let lang = UserDefaults.standard.string(forKey: "user_Lang") {
+            return lang
+        }
+        return ""
+    }
+    
+    
+    var userSelectedLanguage:String{
+        get{
+            if let userSelectedLanguage = UserDefaults.standard.string(forKey: Constant.userDefaultFunctions.userSelectedLanguage){
+                return userSelectedLanguage
+            }
+            return ""
+        }
+        set{
+            UserDefaults.standard.setValue(newValue, forKey: Constant.userDefaultFunctions.userSelectedLanguage)
+            UserDefaults.standard.synchronize()
+        }
+    }
+    
 }

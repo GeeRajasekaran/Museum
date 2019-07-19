@@ -43,6 +43,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.makeKeyAndVisible()
         FirebaseApp.configure()
+        
+        //Localization
+        SESSION.setUserPreferredLanguage(aStrUserLang: "ta-IN")//kn //hi
+        
         return true
     }
 
