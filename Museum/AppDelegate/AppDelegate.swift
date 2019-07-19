@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-
+import IQKeyboardManagerSwift
 
 
 @UIApplicationMain
@@ -20,28 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        // Let's initiliaze window
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.backgroundColor = #colorLiteral(red: 0.9960784314, green: 0.9960784314, blue: 0.9960784314, alpha: 1)
         
-        // Let's check if user availability
-//        if Auth.auth().currentUser != nil {
-//            print("home")
-////            self.performSegue(withIdentifier: "alreadyLoggedIn", sender: nil)
-//        }
-        if !SESSION.IsAppLaunchFirstTime() {
-            // Show home page
-            let mainViewController = ARViewController.instantiate(from: .Main)
-            let navVC = UINavigationController.init(rootViewController: mainViewController)
-            self.window?.rootViewController = navVC
-        } else {
-            // Show login page
-            let loginViewController = LoginViewController.instantiate(from: .Main)
-            SESSION.setAppLaunchIsFirstTime(isLogin: false)
-            self.window?.rootViewController = loginViewController
-        }
+        //        if Auth.auth().currentUser != nil {
+        //            print("home")
+        ////            self.performSegue(withIdentifier: "alreadyLoggedIn", sender: nil)
+        //        }
         
-        self.window?.makeKeyAndVisible()
+        //        self.window?.makeKeyAndVisible()
+        
+        IQKeyboardManager.shared.enable = true
+        
         FirebaseApp.configure()
         return true
     }

@@ -15,8 +15,9 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     // MARK:- IBOutlets
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var loginBtn: TransitionButton!
+
     
-    var loginBtn = TransitionButton()
     enum LoginError:Error {
         case incompleteForm
         case invalidyUserName
@@ -37,16 +38,14 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     
     func initialSetup()  {
         
-        loginBtn = TransitionButton(frame: CGRect(x: (password.frame.size.width / 2) -  password.frame.origin.x  , y: self.password.frame.origin.y + 50, width: 100, height: 40)) // please use Autolayout in real project
-
-        self.view.addSubview(loginBtn)
-        
-        loginBtn.backgroundColor = .red
-        loginBtn.setTitle("Login", for: .normal)
-        loginBtn.cornerRadius = 20
+        loginBtn.cornerRadius = loginBtn.layer.frame.height / 2
         loginBtn.spinnerColor = .white
-        loginBtn.addTarget(self, action: #selector(signUpAction(_:)), for: .touchUpInside)
         
+        Helper.sharedInstance.setRoundCornerView(aView: email, borderRadius: 16)
+        Helper.sharedInstance.setRoundCornerView(aView: password, borderRadius: 16)
+        email.setLeftPaddingPoints(10)
+        password.setLeftPaddingPoints(10)
+
         self.navigationController?.navigationBar.isHidden = true
         
         email.delegate = self

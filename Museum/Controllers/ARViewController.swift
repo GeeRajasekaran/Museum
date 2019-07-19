@@ -8,7 +8,7 @@
 
 import UIKit
 import ARKit
-
+import Firebase
 class ARViewController: parentVC {
     
     let artView = ARArtView()
@@ -22,6 +22,10 @@ class ARViewController: parentVC {
         artView.delegate = self
         //        artView.sceneView.delegate = self
         view.addSubview(artView)
+        
+        Analytics.logEvent("rakeshsharma", parameters: [
+            "email": "Ramkk@gmail.com"
+            ])
     }
     
     override func viewWillAppear(_ animated: Bool) {
