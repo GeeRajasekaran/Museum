@@ -126,7 +126,7 @@ class ARArtView: UIView {
 		sceneView.mask = UIView()
 		sceneView.mask!.backgroundColor = UIColor(white: 0, alpha: 1)
 		
-		dotView.frame.size = CGSize(width: 4, height: 4)
+		dotView.frame.size = CGSize(width: 10, height: 10)
 		dotView.layer.cornerRadius = 2
 		dotView.backgroundColor = UIColor.white
 		self.dotView.alpha = ARArtView.dotViewStandardAlpha
