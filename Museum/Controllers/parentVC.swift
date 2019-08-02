@@ -94,4 +94,35 @@ class parentVC: UIViewController {
         museumInfoVC.floorDetailArr = floorDetailArr
         self.navigationController?.pushViewController(museumInfoVC, animated: true)
     }
+    
+    //MARK: - 3D placing and Animation action(s)
+    
+    func load3DAnimations (parentScene: SCNScene, assetURL: String) {
+        // Load the character in the idle animation
+        if let idleScene = SCNScene(named: assetURL){
+            
+            // This node will be parent of all the animation models
+            let node = SCNNode()
+            
+            // Add all the child nodes to the parent node
+            for child in idleScene.rootNode.childNodes {
+                node.addChildNode(child)
+            }
+            
+            // Set up some properties
+//            node.position = SCNVector3(0, -25, -60)
+//            node.scale = SCNVector3(0.2, 0.2, 0.2)
+            node.position = SCNVector3(0, -1, -4)
+            node.scale = SCNVector3(0.2, 0.2, 0.2)
+            
+            // Add the node to the scene
+            parentScene.rootNode.addChildNode(node)
+        }else{
+            print("Failed to get the idleScene from given URL")
+        }
+        
+    }
+    
+    
+    
 }

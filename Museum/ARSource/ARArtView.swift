@@ -188,12 +188,12 @@ class ARArtView: UIView {
 	//Should be called on viewDidAppear
     func run(detectionImages: Set<ARReferenceImage>?) {
 //        // Create a session configuration - orginal
-//        let configuration = ARWorldTrackingConfiguration()
-//        configuration.detectionImages = detectionImages
+        let configuration = ARWorldTrackingConfiguration()
+        configuration.detectionImages = detectionImages
    
     // Create a session configuration - surya
-    let configuration = ARImageTrackingConfiguration()
-    configuration.trackingImages = detectionImages!
+//    let configuration = ARImageTrackingConfiguration()
+//    configuration.trackingImages = detectionImages!
     configuration.maximumNumberOfTrackedImages = 1
     
     print("Configured")
